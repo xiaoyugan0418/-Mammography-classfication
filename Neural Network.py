@@ -53,8 +53,8 @@ from sklearn.cross_validation import train_test_split
 
 X = []
 y=[]
-filename_benign = ["/ROIs/benigns/%d.png" % r for r in range(0, 103)]
-filename_cancers = ["/ROIs/cancers/%d.png" % r for r in range(0, 178)]
+filename_benign = ["/benigns/%d.png" % r for r in range(0, 103)]
+filename_cancers = ["/cancers/%d.png" % r for r in range(0, 178)]
 
 for fn in filename_benign:
     im = cv2.imread(str(fn),0)
